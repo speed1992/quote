@@ -1,0 +1,62 @@
+.header {
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.column {
+    float: left;
+    padding: 0 2rem 0.5rem 0.5rem;
+}
+
+.column:last-child {
+    padding-right: 0;
+}
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.to {
+    vertical-align: -webkit-baseline-middle;
+}
+
+.vertically {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 40rem) {
+    .wordSearch {
+        width: 9rem;
+        padding-left: 0.4rem;
+    }
+    .header {
+        margin-top: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    .mobile-column {
+        padding: 0 0.5rem 0 0;
+        margin-right: 0.2rem;
+        display: inline-block !important;
+    }
+    .mobile {
+        display: block !important;
+    }
+    .mobile-column:last-child {
+        padding-right: 0;
+    }
+    .column,
+    .desktop {
+        display: none !important;
+    }
+}
+
+.mobile-column,
+.mobile {
+    display: none;
+}
+
+.darkTheme .header input {
+    border: 1px solid #fff;
+}

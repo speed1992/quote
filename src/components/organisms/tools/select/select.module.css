@@ -1,0 +1,7 @@
+@media only screen and (max-width: 40rem) {
+    .mobile-column .dropDown{
+        max-width: 10rem;
+        padding-bottom: .1rem;
+        padding-top: .1rem;
+    }   
+}

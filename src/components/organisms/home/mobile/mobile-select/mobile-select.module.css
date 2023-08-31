@@ -1,0 +1,80 @@
+.typeAheadDropDown {
+  max-width: 12rem;
+  position: relative !important;
+  z-index: 2;
+}
+
+.typeAheadDropDown input {
+  width: 100%;
+  padding: 0.1rem;
+  padding-left: 0.4rem;
+  padding-right: 1.7rem;
+  outline: none;
+}
+
+.typeAheadDropDown::after {
+  transform: rotate(45deg);
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  pointer-events: none;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 6px;
+  width: 7px;
+  height: 7px;
+}
+
+.typeAheadDropDown ul {
+  position: absolute;
+  border: 1px solid rgb(129, 129, 129);
+  border-radius: 4px;
+  border-top: none;
+  width: 16rem;
+  max-height: 28.5rem;
+  font-size: 1.4rem !important;
+  overflow: scroll;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.typeAheadDropDown li {
+  background-color: rgb(253, 253, 253);
+  padding: 0.6rem 0.5rem 0.6rem 0.7rem;
+  cursor: pointer;
+}
+
+.typeAheadDropDown li:not(:first-child) {
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.typeAheadDropDown li:hover {
+  background: lightgray;
+  text-decoration: underline;
+}
+
+.typeAheadDropDown .dropDownList {
+  position: absolute;
+  right: 0.1rem;
+}
+
+.darkTheme .typeAheadDropDown .dropDownList #active {
+  background-color: #fff;
+  color: #000;
+}
+
+.typeAheadDropDown .dropDownList #active {
+  background-color: lightgrey;
+}
+
+.darkTheme .typeAheadDropDown::after {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.darkTheme .typeAheadDropDown li {
+  background-color: #000;
+  color: #fff;
+}

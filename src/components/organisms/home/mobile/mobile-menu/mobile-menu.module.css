@@ -1,0 +1,54 @@
+#slide_menu {
+    background-color: white;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    width: 16rem;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    border-right: 1px solid #b4b4b4;
+    -webkit-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+    list-style: none;
+}
+
+#slide_menu li {
+    padding: 1.2rem 1rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+#slide_menu .voiceSpeed {
+    width: 3rem;
+}
+
+#slide_menu .userName {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 3.7vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#slide_menu .userInput {
+    width: 80%;
+    margin-bottom: 0.5rem;
+    font-size: 3.7vw;
+}
+
+.darkTheme #slide_menu {
+    background-color: black;
+}
+
+.backupNote {
+    font-size: 1.1rem;
+    margin-top: 0.6rem;
+}
+
+.menuBtn {
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+}

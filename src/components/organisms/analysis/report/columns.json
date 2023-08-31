@@ -1,0 +1,13 @@
+[
+    {
+        "label": "Philosopher",
+        "accessor": "philosopher",
+        "sortable": true
+    },
+    {
+        "label": "Read Count",
+        "accessor": "readCount",
+        "sortable": true,
+        "sortbyOrder": "desc"
+    }
+]

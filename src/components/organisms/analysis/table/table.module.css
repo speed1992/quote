@@ -1,0 +1,45 @@
+.table_container {
+    max-width: 100vw;
+    /* max-height: 500px; */
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.captionName {
+    font-style: italic;
+    font-size: 90%;
+    margin-bottom: 10px;
+}
+
+.table th {
+    padding: 8px 10px;
+    border-bottom: 1px solid #1a1a1a;
+    font-weight: bold;
+    text-align: left;
+}
+
+th.up,
+th.default,
+th.down {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.table td {
+    border-top: 1px solid #ddd;
+    padding: 8px 20px;
+}
+
+.table .tbody tr:first-child td {
+    border-top: none;
+}
+
+.tbody {
+    height: 100vh;
+}

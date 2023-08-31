@@ -1,0 +1,15 @@
+.content {
+    min-height: calc(100vh - 6rem);
+}
+
+@media only screen and (max-width: 40rem) {
+    .content {
+        min-height: calc(100vh - 10rem);
+    }
+}
+
+.homepage {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow: hidden;
+}
