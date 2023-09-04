@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useSnackbar } from "react-simple-snackbar";
@@ -32,7 +33,7 @@ import {
 } from "./utils";
 
 export function useHomePageHooks() {
-  const [openSnackbar] = useSnackbar();
+  // const [openSnackbar] = useSnackbar();
   const listRef = useRef();
   const dispatch = useDispatch();
   const start = useSelector((state) => state?.philosophersData?.start);

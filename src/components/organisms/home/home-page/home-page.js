@@ -5,7 +5,7 @@ import AutoSizer from "react-virtualized/dist/commonjs/AutoSizer";
 import { doesPhilosopherDataExist } from "../../../../common/static/utils/utils";
 import { retryTenTimes } from "../../../../common/utils/apiUtils";
 import { applyFilters } from "../../../../common/utils/searchUtils";
-import { isDesktop } from "../../../../common/utils/utils";
+import { isClient, isDesktop } from "../../../../common/utils/utils";
 import { Header } from "../header-layout/header-layout";
 import { LazyLoadQuoteList } from "../lazy-load-quote-list/lazy-load-quote-list";
 import { getPhilosopherFullName } from "../quotes-list/utils/utils";
@@ -107,15 +107,17 @@ const HomePage = () => {
         <>
           <Header {...propsToSend} />
           <div className={styles.content}>
-            <AutoSizer>
-              {({ height, width }) => (
-                <LazyLoadQuoteList
-                  {...propsToSend}
-                  width={width}
-                  height={height}
-                />
-              )}
-            </AutoSizer>
+            {isClient() && (
+              <AutoSizer>
+                {({ height, width }) => (
+                  <LazyLoadQuoteList
+                    {...propsToSend}
+                    width={width}
+                    height={height}
+                  />
+                )}
+              </AutoSizer>
+            )}
           </div>
         </>
       )}
